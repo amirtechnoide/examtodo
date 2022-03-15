@@ -12,19 +12,19 @@
 - responsive in all devices
 
 ## package that i use :
-- uuid,framer motion,react toastify
+- uuid,framer motion,react toastify,docz(for the documentation)
 ## Run Locally
 
 Clone the project
 
 ```bash
-  git clone https://github.com/mostafa-kheibary/Todo-app-react.git
+  git clone https://github.com/amirtechnoide/examtodo.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd Todo-app-react
+  cd examtodo
 ```
 
 Install dependencies
