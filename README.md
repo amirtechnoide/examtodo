@@ -1,5 +1,5 @@
 # Todo App with React
-### todo app with react and context hook its my secound project with react.js
+### todo app with react and context hook its my exam CQP project
 ### you can see the live project on https://festive-leavitt-059597.netlify.app/
 ## Feature :
 - add,delete,edit,check done todos
