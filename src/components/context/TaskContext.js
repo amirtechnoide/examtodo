@@ -28,15 +28,19 @@ export const TaskProvider = ({ children }) => {
     const alldoneTask = tasks.filter((task) => task.isDone === true);
     setDoneTask(alldoneTask);
   }, [tasks]);
+  //supprimer
   const deleteTask = (id) => {
     const newTask = tasks.filter((task) => task.id !== id);
     setTasks(newTask);
     localStorage.setItem("tasks", JSON.stringify(newTask));
   };
+  //supprimer tout
   const deleteAll = () => {
     setTasks([]);
     localStorage.setItem("tasks", JSON.stringify([]));
   };
+  //Done
+
   const doneTask = (id) => {
     const newTask = [...tasks];
     const index = newTask.findIndex((task) => task.id === id);
@@ -44,10 +48,13 @@ export const TaskProvider = ({ children }) => {
     setTasks(newTask);
     localStorage.setItem("tasks", JSON.stringify(newTask));
   };
+  //edit popup
   const setId = (id) => {
     const index = tasks.findIndex((task) => task.id === id);
     setPopUp({ in: !PopUp.in, item: tasks[index] });
   };
+  //edit
+
   const editTask = (text) => {
     const newTask = [...tasks];
     const index = newTask.findIndex((task) => task.id === PopUp.item.id);

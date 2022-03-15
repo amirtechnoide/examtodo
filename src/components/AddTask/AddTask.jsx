@@ -19,14 +19,14 @@ const AddTask = () => {
   const formatDate = valueDate =>
   format(valueDate, `DD/MM/YYYY`)
   //Handle date
-  const [valueDate, setDate] = useState(new Date());
+  const [valueDate, setDate] = useState(new Date().toDateString());
   const handleChangeDate = date => {
     setDate(date)
    }
 
   //Handle date
   const handleSubmit = (e) => {
-  console.log(valueDate)
+  console.log(valueDate.getDay)
 
     e.preventDefault();
     setText({ topic: "", content: "",date:"" });

@@ -64,7 +64,7 @@ const Task = ({ isDone, topic, content, id,valueDate }) => {
         {isDone === true ? <del>{content}</del> : content}
       </p>
       <p className='task__content'>
-        {isDone === true ? <del>{new Date(valueDate).getDay}</del> : new Date(valueDate).getDay}
+        Added on :{isDone === true ? <del>{valueDate}</del> : valueDate}
       </p>
     </motion.div>
   );
